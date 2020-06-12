@@ -1,3 +1,6 @@
+#ifndef CELL_H
+#define CELL_H
+
 #include <string>
 
 class Cell {
@@ -8,9 +11,8 @@ class Cell {
         int row;
         std::string box;
         int freedom;
-    
-        Cell(std::string c, char v) {
-            code = c;
-            value = v;
-        }
+
+        Cell(std::string c, char v);
 };
+
+#endif
