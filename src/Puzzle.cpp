@@ -1,18 +1,20 @@
+#ifndef PUZZLE_CPP
+#define PUZZLE_CPP
+
+#include "../data/puzzle_data.cpp"
 #include <iostream>
-#include <map>
 #include <string>
-#include "Cell.h"
 
 class Puzzle {
     public:
-        std::map<std::string, Cell> grid;
+        std::string grid;
 
-        Puzzle(std::map<std::string, Cell> g) {
+        Puzzle(std::string g) {
             grid = g;
         }
 
         static Puzzle fromFile() {
-            std::map<std::string, Cell> john;
+            std::string john = "hi";
             return Puzzle(john);
         }
         
@@ -20,3 +22,5 @@ class Puzzle {
             std::cout << "Oh hi there!" << std::endl;
         }
 };
+
+#endif
