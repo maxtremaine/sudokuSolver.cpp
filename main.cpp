@@ -1,10 +1,9 @@
 #include <iostream>
-#include "src/Puzzle.cpp"
-#include "data/puzzle_data.cpp"
+#include "src/Puzzle.h"
 
 int main() {
     
-    std::cout << puzzle_data::cells.find("a1") -> second.code << std::endl;
+    Puzzle::sayHi();
     
     return 0;
 }
