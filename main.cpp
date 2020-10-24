@@ -1,9 +1,8 @@
 #include <iostream>
-#include "src/Puzzle.h"
+#include "src/puzzleData.h"
 
 int main() {
     
-    Puzzle::sayHi();
     
     return 0;
 }
